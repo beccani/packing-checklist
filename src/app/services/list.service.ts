@@ -1,17 +1,22 @@
 import { Injectable } from '@angular/core';
-import {Observable, of} from 'rxjs'
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Observable } from 'rxjs'
 import {Item} from "../ItemInterface"
-import {mockList} from "../mock-list"
 
 @Injectable({
   providedIn: 'root'
 })
 export class ListService {
+  private apiUrl = 'http://localhost:5000/list'
 
-  constructor() { }
+  constructor(private http:HttpClient) { }
 
   getList(): Observable<Item[]> {
-    const list = of(mockList);
-    return list;
+    return this.http.get<Item[]>(this.apiUrl);
+  }
+
+  deleteItem(item: Item): Observable<Item> {
+    const url = `${this.apiUrl}/${item.id}`;
+    return this.http.delete<Item>(url);
   }
 }

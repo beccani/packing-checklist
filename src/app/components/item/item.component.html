@@ -1,4 +1,4 @@
 <div>
-    <p>{{item.description}} <fa-icon [ngStyle]="{'color': 'grey'}" [icon]="faTrash"></fa-icon></p>
+    <p>{{item.description}} <fa-icon (click)="onDelete(item)" [ngStyle]="{'color': 'grey'}" [icon]="faTrash"></fa-icon></p>
 
 </div>

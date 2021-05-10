@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ListService} from '../../services/list.service'
 import {Item} from "../../ItemInterface"
+import { faTasks } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-list',
@@ -14,6 +15,11 @@ export class ListComponent implements OnInit {
 
   ngOnInit(): void {
     this.listService.getList().subscribe((list) => this.list = list);
+  }
+
+  deleteItem(item: Item) {
+    this.listService.deleteItem(item).subscribe(
+      () => this.list = this.list.filter(t => t.id !== item.id));
   }
 
 }
