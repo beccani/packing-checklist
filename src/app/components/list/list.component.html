@@ -1,4 +1,5 @@
 <div>
+    <app-add-item (onAddItem)="addItem(text)"></app-add-item>
     <app-item 
         *ngFor ="let item of list" 
         [item]="item" 

@@ -27,4 +27,9 @@ export class ListComponent implements OnInit {
     //console.log(item.packed);
     this.listService.updateItemPacked(item).subscribe();
   }
+
+  addItem(item: Item) {
+    console.log(item);
+  }
 }
+
