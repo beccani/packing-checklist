@@ -11,7 +11,9 @@ import { emit } from 'process';
 export class ItemComponent implements OnInit {
   @Input() item: Item;
   @Output() onDeleteItem: EventEmitter<Item> = new EventEmitter();
+  @Output() onTogglePacked: EventEmitter<Item> = new EventEmitter();
   faTrash = faTrash;
+
 
   constructor() { }
 
@@ -20,6 +22,10 @@ export class ItemComponent implements OnInit {
 
   onDelete(item) {
     this.onDeleteItem.emit(item);
+  }
+
+  onToggle(item) {
+    this.onTogglePacked.emit(item);
   }
 
 }

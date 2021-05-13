@@ -22,4 +22,9 @@ export class ListComponent implements OnInit {
       () => this.list = this.list.filter(t => t.id !== item.id));
   }
 
+  togglePacked(item: Item) {
+    item.packed = !item.packed;
+    //console.log(item.packed);
+    this.listService.updateItemPacked(item).subscribe();
+  }
 }

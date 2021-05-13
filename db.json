@@ -3,7 +3,7 @@
     {
       "id": 1,
       "description": "toothbrush",
-      "packed": false
+      "packed": true
     },
     {
       "id": 2,
@@ -13,7 +13,7 @@
     {
       "id": 3,
       "description": "socks",
-      "packed": false
+      "packed": true
     }
   ]
 }
