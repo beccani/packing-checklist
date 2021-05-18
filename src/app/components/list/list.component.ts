@@ -14,12 +14,15 @@ export class ListComponent implements OnInit {
   constructor(private listService: ListService) { }
 
   ngOnInit(): void {
-    this.listService.getList().subscribe((list) => this.list = list);
+    this.listService.getList().subscribe((list) => (this.list = list));
   }
 
   deleteItem(item: Item) {
-    this.listService.deleteItem(item).subscribe(
-      () => this.list = this.list.filter(t => t.id !== item.id));
+    this.listService
+      .deleteItem(item)
+      .subscribe(
+        () => (this.list = this.list.filter((t) => t.id !== item.id))
+      );
   }
 
   togglePacked(item: Item) {
@@ -29,7 +32,7 @@ export class ListComponent implements OnInit {
   }
 
   addItem(item: Item) {
-    console.log(item);
+    this.listService.addItem(item).subscribe((item) => (this.list.push(item)));
   }
 }
 

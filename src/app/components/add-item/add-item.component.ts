@@ -7,8 +7,9 @@ import {Item} from "../../ItemInterface";
   styleUrls: ['./add-item.component.css']
 })
 export class AddItemComponent implements OnInit {
-  @Output() onAddItem: EventEmitter<Item> = new EventEmitter;
+  @Output() onAddItem: EventEmitter<Item> = new EventEmitter();
   text: string;
+  packed: boolean = false;
 
   constructor() { }
 
@@ -23,11 +24,13 @@ export class AddItemComponent implements OnInit {
 
     const newItem = {
       text: this.text,
+      packed: this.packed,
     }
 
-    //this.onAddItem.emit(newItem);
+    this.onAddItem.emit(newItem);
 
     this.text= '';
+    this.packed = false;
   }
 
 }

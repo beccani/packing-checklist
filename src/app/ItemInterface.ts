@@ -1,5 +1,5 @@
 export interface Item {
-    id: number,
-    description: String,
+    id?: number,
+    text: String,
     packed: Boolean
 }

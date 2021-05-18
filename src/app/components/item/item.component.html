@@ -1,3 +1,3 @@
 <div [ngClass]="{ reminder: item.packed }" class="item" (dblclick)="onToggle(item)">
-    <p>{{item.description}} <fa-icon (click)="onDelete(item)" [ngStyle]="{'color': 'grey'}" [icon]="faTrash"></fa-icon></p>
+    <p>{{item.text}} <fa-icon (click)="onDelete(item)" [ngStyle]="{'color': 'grey'}" [icon]="faTrash"></fa-icon></p>
 </div>

@@ -27,5 +27,6 @@ export class ItemComponent implements OnInit {
   onToggle(item) {
     this.onTogglePacked.emit(item);
   }
+  
 
 }

@@ -2,18 +2,23 @@
   "list": [
     {
       "id": 1,
-      "description": "toothbrush",
-      "packed": true
+      "text": "toothbrush",
+      "packed": false
     },
     {
       "id": 2,
-      "description": "toothpaste",
+      "text": "toothpaste",
       "packed": false
     },
     {
       "id": 3,
-      "description": "socks",
-      "packed": true
+      "text": "socks",
+      "packed": false
+    },
+    {
+      "text": "test",
+      "packed": false,
+      "id": 4
     }
   ]
 }
