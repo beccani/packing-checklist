@@ -1,6 +1,10 @@
 <header>
     <h1>{{title}}</h1>
-    <app-button color="blue" text="Create List" (buttonClick)="createList()"></app-button>
+    <app-button 
+        color= "{{showAddItem ? 'purple' : 'blue'}}"
+        text="{{showAddItem ? 'Close' : 'Add'}}"
+        (buttonClick)="toggleCreateList()"
+    ></app-button>
 </header>
 
 
