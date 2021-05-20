@@ -8,9 +8,10 @@ export class UiService {
   private showAddItem: boolean = false;
   private subject = new Subject<any>();
 
-  constructor() { }
+  constructor() {}
 
   toggleAddItem(): void {
+    console.log(this.showAddItem);
     this.showAddItem = !this.showAddItem;
     this.subject.next(this.showAddItem);
   }
