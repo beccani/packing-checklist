@@ -1,5 +1,4 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { Subscriber } from 'rxjs';
 import {Item} from "../../ItemInterface";
 import {Subscription} from 'rxjs';
 import {UiService} from '../../services/ui.service';
@@ -13,7 +12,7 @@ export class AddItemComponent implements OnInit {
   @Output() onAddItem: EventEmitter<Item> = new EventEmitter();
   text: string;
   packed: boolean = false;
-  showAddItem: boolean;
+  showAddItem: boolean = false;
   subscription: Subscription;
 
   constructor(private uiService: UiService) {
@@ -35,9 +34,9 @@ export class AddItemComponent implements OnInit {
     }
 
     this.onAddItem.emit(newItem);
-
     this.text= '';
     this.packed = false;
+
   }
 
 }
