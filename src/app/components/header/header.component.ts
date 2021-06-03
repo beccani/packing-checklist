@@ -24,7 +24,7 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  toggleCreateList() {
+  toggleShowForm() {
     this.uiService.toggleAddItem();
   }
 

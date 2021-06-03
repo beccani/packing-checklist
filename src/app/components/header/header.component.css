@@ -3,4 +3,10 @@ header {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
+    color: darkslategray;
+    text-decoration: underline;
+    text-decoration-color: darkslategray;
+    padding-left: 25px;
+    padding-right: 25px;
 }
+

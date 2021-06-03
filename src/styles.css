@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    background-color: lavender;
+}
+
+button {
+    border: none;
+    color: white;
+    position: relative;
+    padding-top:5px; 
+    padding-bottom:5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+
+list {
+    border: black;
+}
