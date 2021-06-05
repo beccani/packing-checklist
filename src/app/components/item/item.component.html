@@ -1,6 +1,6 @@
 <div [ngClass]="{ packed: item.packed }" class="item" (dblclick)="onToggle(item)">
     
-    <p>{{item.text}} 
+    <p class="todo-item">{{item.text}} 
         
         <fa-icon (click)="onDelete(item)" [ngStyle]="{'color': 'grey'}" [icon]="faTrash"></fa-icon>
     

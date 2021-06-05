@@ -14,6 +14,17 @@ button {
     border-radius: 5px;
 }
 
-list {
-    border: black;
+.todo-item {
+    /* border: black; */
+    color: purple;
+}
+
+
+.todo-border {
+    border: 2px solid black;
+    padding: 20px;
+}
+
+.entire-page {
+    border: 2px solid slategrey;
 }

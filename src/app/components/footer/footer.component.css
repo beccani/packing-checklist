@@ -2,4 +2,7 @@ footer {
     border-style: solid;
     order: black;
     text-align: right;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
 }
