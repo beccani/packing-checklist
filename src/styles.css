@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-    background-color: lavender;
+    background-color: #e3a891;
 }
 
 button {
@@ -12,19 +12,21 @@ button {
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 5px;
+    box-shadow: 3px 3px 2px grey;
 }
 
 .todo-item {
     /* border: black; */
-    color: purple;
+    color: darkslategray;
+    font-weight: bold;
 }
 
 
 .todo-border {
-    border: 2px solid black;
+    /* border: 2px solid darkslategray; */
     padding: 20px;
 }
 
 .entire-page {
-    border: 2px solid slategrey;
+    border: 2px solid white;
 }

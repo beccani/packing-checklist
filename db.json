@@ -6,19 +6,34 @@
       "packed": true
     },
     {
-      "id": 2,
-      "text": "toothpaste",
-      "packed": true
-    },
-    {
       "id": 3,
       "text": "socks",
-      "packed": false
+      "packed": true
     },
     {
       "text": "test",
       "packed": false,
-      "id": 4
+      "id": 5
+    },
+    {
+      "text": "toothpaste",
+      "packed": false,
+      "id": 6
+    },
+    {
+      "text": "pants",
+      "packed": true,
+      "id": 7
+    },
+    {
+      "text": "shirts",
+      "packed": true,
+      "id": 8
+    },
+    {
+      "text": "shoes",
+      "packed": false,
+      "id": 9
     }
   ]
 }

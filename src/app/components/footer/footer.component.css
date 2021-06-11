@@ -1,8 +1,17 @@
 footer {
-    border-style: solid;
-    order: black;
+    border: 2px solid darkslategray;
     text-align: right;
     padding: 20px;
+    /* display: flex;
+    justify-content: flex-end; */
+}
+
+#copyright {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#about-link {
     display: flex;
     justify-content: flex-end;
 }
