@@ -12,13 +12,8 @@
     },
     {
       "text": "test",
-      "packed": false,
+      "packed": true,
       "id": 5
-    },
-    {
-      "text": "toothpaste",
-      "packed": false,
-      "id": 6
     },
     {
       "text": "pants",
@@ -27,13 +22,18 @@
     },
     {
       "text": "shirts",
-      "packed": true,
+      "packed": false,
       "id": 8
     },
     {
       "text": "shoes",
       "packed": false,
       "id": 9
+    },
+    {
+      "text": "sunscreen",
+      "packed": false,
+      "id": 10
     }
   ]
 }
